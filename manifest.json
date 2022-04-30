@@ -1,0 +1,18 @@
+{
+  "name": "switch input direction for linux",
+  "description": "this extension enable to switch input direction(rtl and ltr) on linux same as windows.",
+  "version": "1.0",
+  "author": "GuyCohen",
+  "manifest_version": 3,
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "match_about_blank": true,
+      "matches": [ "<all_urls>" ],
+      "js": ["script.js"]
+    }
+  ]
+}
